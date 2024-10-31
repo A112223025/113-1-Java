@@ -1,15 +1,14 @@
-package edu.shu.Angela.src;
+package edu.shu.main;
 import java.util.Scanner;
-import edu.shu.Angela.*;
+import edu.shu.chuck.*;
 
 public class CardApp {
-
     public static void main(String[] args) {
         CashCard[] cards ={
-
-                new CashCard("A001", 500, 0);
-                new CashCard("A002", 300, 0);
-                new CashCard("A003", 1000, 1);
+                new CashCard(number:"A001", balance:50),
+                new CashCard(number:"A002", balance:300),
+                new CashCard(number:"A003", balance:1000, bonus:1),
+                new CashCard(number:"A004")
         };
         Scanner inout = new Scanner(System.in);
 //        for(CashCard Card : Cards){

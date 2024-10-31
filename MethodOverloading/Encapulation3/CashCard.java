@@ -5,16 +5,30 @@ public class CashCard {
     private int balance;
     private int bonus;
     private final int BOUNSCASH = 10;
+    private int cardOrder;
 
-    public CashCard(String number, int balance, int bonus) {
-        this.number = number;
-        this.balance = balance;
-        this.bonus = bonus;
+    //方法的身份便是＝方法名稱 ＋參數個數 ＋參數型態
+
+    public CashCard() { setNumber("unknown");}
+    public CashCard(String number){
+        setNumber(number);
+        System.out.printf("第 %d 張卡％n", ++this.cardOrder );
     }
 
-    public String getNumber(){ 2usages
-        return this.number;
+    public CashCard(String number,int balance){
+        setNumber(number);
+        setBalance(balance);
+        System.out.printf("第 %d 張卡％n", ++this.cardOrder);
     }
+
+    public CashCard(String number,int balance){
+        setNumber(number);
+        setBalance(balance);
+        setBonus(bonus);
+        System.out.printf("第 %d 張卡％n", ++this.cardOrder);
+    }
+
+    public String getNumber(){ return this.number;}
     int getBalance(){ 2usages
         return this.balance;
     }
