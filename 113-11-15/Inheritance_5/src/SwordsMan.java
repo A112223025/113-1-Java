@@ -1,0 +1,13 @@
+public class SwordsMan extends Role {
+    @Override
+    public void fight() {
+        super.fight();
+        System.out.println("魔法攻擊");
+    }
+    public void cure(){System.out.println("魔法治療");}
+    @Override
+    public String toString(){
+        return String.format("劍士:(%S, %d, %d)%n");
+    }
+
+}
